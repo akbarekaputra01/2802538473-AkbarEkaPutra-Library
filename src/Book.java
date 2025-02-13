@@ -24,4 +24,12 @@ public class Book {
     public String getAuthorBio() {
         return this.author.getBiography();
     }
+
+    public void displayBook(Book book) {
+        System.out.println("Title: " + book.getTitle());
+        System.out.println("ISBN: " + book.getISBN());
+        System.out.println("Author: " + book.getAuthorName());
+        System.out.println("Biography: " + book.getAuthorBio());
+        System.out.println("------------------------");
+    }
 }

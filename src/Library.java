@@ -23,11 +23,7 @@ public class Library {
     public void displayLibraryBooks() {
         System.out.println("Books in library:");
         for (Book book : library) {
-            System.out.println("Title: " + book.getTitle());
-            System.out.println("ISBN: " + book.getISBN());
-            System.out.println("Author: " + book.getAuthorName());
-            System.out.println("Biography: " + book.getAuthorBio());
-            System.out.println("------------------------");
+            book.displayBook(book);
         }
     }
 }

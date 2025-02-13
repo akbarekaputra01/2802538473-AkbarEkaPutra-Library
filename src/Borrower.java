@@ -28,11 +28,7 @@ public class Borrower {
     public void displayBorrowedBooks() {
         System.out.println(this.name + "'s borrowed books:");
         for (Book borrowedBook : borrowedBooks) {
-            System.out.println("Title: " + borrowedBook.getTitle());
-            System.out.println("ISBN: " + borrowedBook.getISBN());
-            System.out.println("Author: " + borrowedBook.getAuthorName());
-            System.out.println("Biography: " + borrowedBook.getAuthorBio());
-            System.out.println("------------------------");
+            borrowedBook.displayBook(borrowedBook);
         }
     }
 }
